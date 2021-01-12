@@ -6,7 +6,8 @@ import json
 
 while True:
 	print('[+] ==================')
-	ip = input('Put ur target: ')
+	ip = input('[ ? ] Put ur target: ')
+	print('[+] ==================')
 	os.system('cls')
 	url = "http://ip-api.com/json/"
 	konz = urllib2.urlopen(url + ip)
@@ -14,11 +15,11 @@ while True:
 	irfan = json.loads(data)
         
 	print("[+] =================')
-	print("IP: " + irfan['query'])
-	print("City: " + irfan['city'])
-	print("Status: " + irfan['region'])
-	print("ISP: " + irfan['isp'])
-	print("TimeZone: " + irfan['timezone'])
+	print("[ = ] IP: " + irfan['query'])
+	print("[ = ] City: " + irfan['city'])
+	print("[ = ] Status: " + irfan['region'])
+	print("[ = ] ISP: " + irfan['isp'])
+	print("[ = ] TimeZone: " + irfan['timezone'])
 	print('[+] ==================')
 
 	break
