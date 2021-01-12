@@ -12,7 +12,8 @@ while True:
 	konz = urllib2.urlopen(url + ip)
 	data = konz.read()
 	irfan = json.loads(data)
-
+        
+	print("[+] =================')
 	print("IP: " + irfan['query'])
 	print("City: " + irfan['city'])
 	print("Status: " + irfan['region'])
