@@ -7,6 +7,7 @@ import json
 while True:
 	print('[+] ==================')
 	ip = input('Put ur target: ')
+	os.system('cls')
 	url = "http://ip-api.com/json/"
 	konz = urllib2.urlopen(url + ip)
 	data = konz.read()
