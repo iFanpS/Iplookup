@@ -14,7 +14,7 @@ while True:
 	data = konz.read()
 	irfan = json.loads(data)
         
-	print("[+] =================')
+	print("[+] =================")
 	print("[ = ] IP: " + irfan['query'])
 	print("[ = ] City: " + irfan['city'])
 	print("[ = ] Status: " + irfan['region'])
